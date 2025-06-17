@@ -35,36 +35,10 @@ openbgpd-*
 openbgpd*.tar.gz
 
 bgpd.conf
-compat/arc4random.c
-compat/arc4random_*
-compat/chacha_private.h
-compat/explicit_bzero.c
-compat/fmt_scaled.c
-compat/getentropy_*
-compat/imsg-buffer.c
-compat/imsg.c
-compat/inet_net_pton.c
-compat/reallocarray.c
-compat/recallocarray.c
-compat/sha2.c
-compat/strlcat.c
-compat/strlcpy.c
-compat/strndup.c
-compat/strnlen.c
-compat/strtonum.c
-compat/vis.c
-
-include/imsg.h
-include/sha2_openbsd.h
-include/util.h
-include/vis.h
 
 src/bgpctl/bgpctl
 src/bgpd/bgpd
 src/bgplgd/bgplgd
-src/bgpctl/*.[ch]
 src/bgpctl/*.in
-src/bgpd/*.[ch]
 src/bgpd/*.in
-src/bgplgd/*.[ch]
 src/bgplgd/*.in

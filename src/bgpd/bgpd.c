@@ -276,7 +276,8 @@ main(int argc, char *argv[])
 	    (ibuf_rde = malloc(sizeof(struct imsgbuf))) == NULL ||
 	    (ibuf_rtr = malloc(sizeof(struct imsgbuf))) == NULL)
 		fatal(NULL);
-	if (imsgbuf_init(ibuf_se, pipe_m2s[0]) == -1 ||
+	//FUZZING: replace the fd to session with stdin to fuzz with AFL++
+	if (imsgbuf_init(ibuf_se, 0) == -1 ||
 	    imsgbuf_set_maxsize(ibuf_se, MAX_BGPD_IMSGSIZE) == -1 ||
 	    imsgbuf_init(ibuf_rde, pipe_m2r[0]) == -1 ||
 	    imsgbuf_set_maxsize(ibuf_rde, MAX_BGPD_IMSGSIZE) == -1 ||

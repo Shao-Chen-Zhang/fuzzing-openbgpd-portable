@@ -34,7 +34,7 @@ Makefile.in
 openbgpd-*
 openbgpd*.tar.gz
 
-bgpd.conf
+#bgpd.conf
 
 src/bgpctl/bgpctl
 src/bgpd/bgpd

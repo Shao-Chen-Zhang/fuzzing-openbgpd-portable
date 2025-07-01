@@ -586,6 +586,15 @@ prepare_listeners(struct bgpd_config *conf)
 		    &opt, sizeof(opt)) == -1)
 			fatal("setsockopt SO_REUSEADDR");
 
+#ifdef IPV6_V6ONLY
+		if (la->sa.ss_family == AF_INET6) {
+			opt = 1;
+			if (setsockopt(la->fd, IPPROTO_IPV6, IPV6_V6ONLY,
+			    &opt, sizeof(opt)) == -1)
+				fatal("setsockopt IPV6_V6ONLY");
+		}
+#endif
+
 		if (bind(la->fd, (struct sockaddr *)&la->sa, la->sa_len) ==
 		    -1) {
 			switch (la->sa.ss_family) {

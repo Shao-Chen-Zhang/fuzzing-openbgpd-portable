@@ -36,8 +36,6 @@
 #define	RTR_DEFAULT_VERSION		1
 #define	BGP_PORT			179
 #define	RTR_PORT			323
-#define	CONFFILE			"/etc/bgpd.conf"
-#define	BGPD_USER			"_bgpd"
 #define	PEER_DESCR_LEN			64
 #define	REASON_LEN			256	/* includes NUL terminator */
 #define	PFTABLE_LEN			32
@@ -74,7 +72,19 @@
 
 #define	BGPD_LOG_UPDATES		0x0001
 
-#define	SOCKET_NAME			"/var/run/bgpd.sock"
+#ifndef	BGPD_USER
+#define	BGPD_USER			"_bgpd"
+#endif
+
+#ifndef	SYSCONFDIR
+#define	SYSCONFDIR			"/etc"
+#endif
+#define	CONFFILE			SYSCONFDIR "/bgpd.conf"
+
+#ifndef	RUNSTATEDIR
+#define	RUNSTATEDIR			"/var/run"
+#endif
+#define	SOCKET_NAME			RUNSTATEDIR "/bgpd.sock"
 
 #define	F_BGPD			0x0001
 #define	F_BGPD_INSERTED		0x0002

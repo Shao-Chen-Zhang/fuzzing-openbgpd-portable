@@ -46,9 +46,20 @@
 #include "http.h"
 #include "version.h"
 
-#define TIMEOUT_DEFAULT		 30
+#ifndef WWW_USER
 #define WWW_USER		 "www"
+#endif
+#ifndef BGPLGD_USER
 #define BGPLGD_USER		 "_bgplgd"
+#endif
+#ifndef RUNSTATEDIR
+#define RUNSTATEDIR		"/var/run"
+#endif
+#ifndef WWWRUNSTATEDIR
+#define WWWRUNSTATEDIR		"/var/www/run"
+#endif
+
+#define TIMEOUT_DEFAULT		 30
 
 #define FCGI_CONTENT_SIZE	 65535
 #define FCGI_PADDING_SIZE	 255
@@ -227,9 +238,9 @@ struct timeval		kill_timeout = { 5, 0 };
 struct slowcgi_proc	slowcgi_proc;
 int			debug = 0;
 int			on = 1;
-char			*fcgi_socket = "/var/www/run/bgplgd.sock";
+char			*fcgi_socket = WWWRUNSTATEDIR "/bgplgd.sock";
 char			*bgpctlpath = "bgpctl";
-char			*bgpctlsock = "/var/run/bgpd.rsock";
+char			*bgpctlsock = RUNSTATEDIR "/bgpd.rsock";
 
 
 /*
@@ -431,13 +442,14 @@ accept_reserve(int sockfd, struct sockaddr *addr, socklen_t *addrlen,
     int reserve, volatile int *counter)
 {
 	int ret;
+#ifdef HAVE_GETDTABLECOUNT
 	if (getdtablecount() + reserve +
 	    ((*counter + 1) * FD_NEEDED) >= getdtablesize()) {
 		ldebug("inflight fds exceeded");
 		errno = EMFILE;
 		return -1;
 	}
-
+#endif
 	if ((ret = accept4(sockfd, addr, addrlen, SOCK_NONBLOCK | SOCK_CLOEXEC))
 	    > -1) {
 		(*counter)++;

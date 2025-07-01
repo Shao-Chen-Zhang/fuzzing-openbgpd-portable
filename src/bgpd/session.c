@@ -842,6 +842,7 @@ session_setup_socket(struct peer *p)
 			 * 1=direct n=multihop with ttlsec, we always use 255
 			 */
 			if (p->conf.ttlsec) {
+#ifdef IP_MINTTL
 				ttl = 256 - p->conf.distance;
 				if (setsockopt(p->fd, IPPROTO_IP, IP_MINTTL,
 				    &ttl, sizeof(ttl)) == -1) {
@@ -851,6 +852,10 @@ session_setup_socket(struct peer *p)
 					return (-1);
 				}
 				ttl = 255;
+#else
+				log_peer_warn(&p->conf, "OS does not support "
+				    "ttl-security for IPv4 sessions");
+#endif
 			}
 
 			if (setsockopt(p->fd, IPPROTO_IP, IP_TTL, &ttl,
@@ -875,6 +880,7 @@ session_setup_socket(struct peer *p)
 			 * 1=direct n=multihop with ttlsec, we always use 255
 			 */
 			if (p->conf.ttlsec) {
+#ifdef IPV6_MINHOPCOUNT
 				ttl = 256 - p->conf.distance;
 				if (setsockopt(p->fd, IPPROTO_IPV6,
 				    IPV6_MINHOPCOUNT, &ttl, sizeof(ttl))
@@ -885,6 +891,10 @@ session_setup_socket(struct peer *p)
 					return (-1);
 				}
 				ttl = 255;
+#else
+				log_peer_warn(&p->conf, "OS does not support "
+				    "ttl-security for IPv6 sessions");
+#endif
 			}
 			if (setsockopt(p->fd, IPPROTO_IPV6, IPV6_UNICAST_HOPS,
 			    &ttl, sizeof(ttl)) == -1) {

@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=./bgpd
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-d -f bgpd.conf
+AFL_CUSTOM_INFO_OUT=out/default
+# command line:
+'afl-fuzz' '-i' 'rand_seeds/' '-o' 'out' '-g' '4000' '--' './bgpd' '-d' '-f' 'bgpd.conf'

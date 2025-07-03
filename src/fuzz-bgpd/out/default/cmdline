@@ -1,0 +1,4 @@
+./bgpd
+-d
+-f
+bgpd.conf

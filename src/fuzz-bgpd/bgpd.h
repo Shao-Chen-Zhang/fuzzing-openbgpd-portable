@@ -151,6 +151,8 @@ enum bgpd_process {
 	PROC_SE,
 	PROC_RDE,
 	PROC_RTR,
+	//FUZZ
+	PROC_COUNT
 };
 
 enum reconf_action {
@@ -743,7 +745,9 @@ enum imsg_type {
 	IMSG_REFRESH,
 	IMSG_DEMOTE,
 	IMSG_XON,
-	IMSG_XOFF
+	IMSG_XOFF,
+	//FUZZ
+	IMSG_TYPE_COUNT
 };
 
 struct demote_msg {

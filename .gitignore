@@ -29,7 +29,7 @@ ltmain.sh
 m4/l*.m4
 missing
 ylwrap
-Makefile
+#Makefile
 Makefile.in
 openbgpd-*
 openbgpd*.tar.gz

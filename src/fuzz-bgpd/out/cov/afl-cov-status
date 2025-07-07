@@ -1,3 +1,0 @@
-afl_cov_pid     : 8071
-afl_cov_version : 0.7.0
-command_line    : /usr/local/bin/afl-cov -d /root/fuzzing-openbgpd-portable/src/fuzz-bgpd/out --coverage-cmd ./bgpd -d -f bgpd.conf < AFL_FILE --code-dir . --overwrite

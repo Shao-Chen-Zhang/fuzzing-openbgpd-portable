@@ -2748,7 +2748,8 @@ fetchifs(int ifindex)
 		log_warn("%s: sysctl", __func__);
 		return (-1);
 	}
-	if ((buf = malloc(len)) == NULL) {
+	//FUZZ
+	if ((buf = malloc(len*2)) == NULL) {
 		log_warn("%s", __func__);
 		return (-1);
 	}

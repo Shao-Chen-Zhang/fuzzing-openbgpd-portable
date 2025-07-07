@@ -1,6 +1,6 @@
 Command line used to find this crash:
 
-afl-fuzz -i rand_seeds/ -o out -g 4000 -- ./bgpd -d -f bgpd.conf
+afl-fuzz -i seeds/ -o out -- ./bgpd -d
 
 If you can't reproduce a bug outside of afl-fuzz, be sure to set the same
 memory limit. The limit used for this fuzzing session was 0 B.

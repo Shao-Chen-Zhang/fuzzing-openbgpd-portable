@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=asan-bgpd/bgpd
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-d
+AFL_CUSTOM_INFO_OUT=out//default
+# command line:
+'afl-fuzz' '-i' '-' '-o' 'out/' '--' 'asan-bgpd/bgpd' '-d'

@@ -1,0 +1,8 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=asan-bgpd-3/bgpd
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-d
+AFL_CUSTOM_INFO_OUT=out-3//default
+AFL_TESTCACHE_SIZE=2000
+AFL_USE_ASAN=1
+# command line:
+'afl-fuzz' '-i' 'seeds/' '-o' 'out-3/' '--' 'asan-bgpd-3/bgpd' '-d'

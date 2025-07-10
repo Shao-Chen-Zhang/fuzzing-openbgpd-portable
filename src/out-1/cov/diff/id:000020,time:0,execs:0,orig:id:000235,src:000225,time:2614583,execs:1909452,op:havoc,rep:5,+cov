@@ -1,0 +1,12 @@
+diff id:000019,time:0,execs:0,orig:id:000236,src:000235,time:2699609,execs:1969052,op:havoc,rep:4,+cov -> id:000020,time:0,execs:0,orig:id:000235,src:000225,time:2614583,execs:1909452,op:havoc,rep:5,+cov
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/util.c
+  New 'function' coverage: addr2sa_in6()
+  New 'line' coverage: 1176
+  New 'line' coverage: 1179
+  New 'line' coverage: 1180
+  New 'line' coverage: 1181
+  New 'line' coverage: 1182
+  New 'line' coverage: 1183
+  New 'line' coverage: 1222
+  New 'line' coverage: 1223
+  New 'line' coverage: 1224

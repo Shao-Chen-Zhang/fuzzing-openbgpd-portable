@@ -1,0 +1,33 @@
+diff id:000248,time:0,execs:0,orig:id:000110,src:000101,time:293361,execs:278578,op:int32,pos:23,val:be:+16 -> id:000249,time:0,execs:0,orig:id:000111,src:000101,time:293419,execs:278641,op:ext_UO,pos:23,+cov
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/kroute-freebsd.c
+  New 'function' coverage: kif_find()
+  New 'function' coverage: kif_tree_RB_FIND()
+  New 'function' coverage: kroute_validate()
+  New 'line' coverage: 1479
+  New 'line' coverage: 1482
+  New 'line' coverage: 1916
+  New 'line' coverage: 1920
+  New 'line' coverage: 1921
+  New 'line' coverage: 1923
+  New 'line' coverage: 2005
+  New 'line' coverage: 2009
+  New 'line' coverage: 2012
+  New 'line' coverage: 2021
+  New 'line' coverage: 2022
+  New 'line' coverage: 2111
+  New 'line' coverage: 2112
+  New 'line' coverage: 2113
+  New 'line' coverage: 2114
+  New 'line' coverage: 2122
+  New 'line' coverage: 2184
+  New 'line' coverage: 2185
+  New 'line' coverage: 2186
+  New 'line' coverage: 2187
+  New 'line' coverage: 2191
+  New 'line' coverage: 2192
+  New 'line' coverage: 2193
+  New 'line' coverage: 2194
+  New 'line' coverage: 2196
+  New 'line' coverage: 2272
+  New 'line' coverage: 2273
+  New 'line' coverage: 2274

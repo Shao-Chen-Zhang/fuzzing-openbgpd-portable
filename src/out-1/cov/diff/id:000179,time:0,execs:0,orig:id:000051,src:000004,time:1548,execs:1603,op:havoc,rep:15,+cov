@@ -1,0 +1,8 @@
+diff id:000178,time:0,execs:0,orig:id:000052,src:000004,time:1572,execs:1627,op:havoc,rep:10,+cov -> id:000179,time:0,execs:0,orig:id:000051,src:000004,time:1548,execs:1603,op:havoc,rep:15,+cov
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
+  New 'function' coverage: bgpd_rtr_conn_teardown()
+  New 'line' coverage: 1324
+  New 'line' coverage: 1325
+  New 'line' coverage: 1781
+  New 'line' coverage: 1785
+  New 'line' coverage: 1795

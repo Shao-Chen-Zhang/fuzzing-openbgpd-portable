@@ -1,0 +1,38 @@
+diff id:000001,time:0,execs:0,orig:id:000254,src:000022,time:5499128,execs:3906019,op:havoc,rep:9 -> id:000002,time:0,execs:0,orig:id:000253,src:000203,time:5272126,execs:3748814,op:havoc,rep:31
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
+  New 'line' coverage: 305
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/config.c
+  New 'line' coverage: 600
+  New 'line' coverage: 602
+  New 'line' coverage: 603
+  New 'line' coverage: 604
+  New 'line' coverage: 606
+  New 'line' coverage: 608
+  New 'line' coverage: 609
+  New 'line' coverage: 610
+  New 'line' coverage: 612
+  New 'line' coverage: 619
+  New 'line' coverage: 620
+  New 'line' coverage: 621
+  New 'line' coverage: 622
+  New 'line' coverage: 623
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/log.c
+  New 'function' coverage: log_warn()
+  New 'line' coverage: 100
+  New 'line' coverage: 104
+  New 'line' coverage: 107
+  New 'line' coverage: 110
+  New 'line' coverage: 112
+  New 'line' coverage: 113
+  New 'line' coverage: 118
+  New 'line' coverage: 119
+  New 'line' coverage: 121
+  New 'line' coverage: 124
+  New 'line' coverage: 125
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/util.c
+  New 'function' coverage: log_sockaddr()
+  New 'line' coverage: 150
+  New 'line' coverage: 155
+  New 'line' coverage: 156
+  New 'line' coverage: 160
+  New 'line' coverage: 161

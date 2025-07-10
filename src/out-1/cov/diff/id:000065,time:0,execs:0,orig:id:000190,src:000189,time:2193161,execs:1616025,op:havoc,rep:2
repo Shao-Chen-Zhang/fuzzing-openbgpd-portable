@@ -1,0 +1,40 @@
+diff id:000064,time:0,execs:0,orig:id:000191,src:000189,time:2193524,execs:1616274,op:havoc,rep:2 -> id:000065,time:0,execs:0,orig:id:000190,src:000189,time:2193161,execs:1616025,op:havoc,rep:2
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
+  New 'line' coverage: 1215
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/kroute-freebsd.c
+  New 'function' coverage: get_linkstate()
+  New 'function' coverage: get_media_descr()
+  New 'function' coverage: ift2ifm()
+  New 'function' coverage: kif_tree_RB_NEXT()
+  New 'function' coverage: kr_show_interface()
+  New 'line' coverage: 2390
+  New 'line' coverage: 2392
+  New 'line' coverage: 2394
+  New 'line' coverage: 2399
+  New 'line' coverage: 2401
+  New 'line' coverage: 2404
+  New 'line' coverage: 2408
+  New 'line' coverage: 2409
+  New 'line' coverage: 2410
+  New 'line' coverage: 2413
+  New 'line' coverage: 2416
+  New 'line' coverage: 2420
+  New 'line' coverage: 2424
+  New 'line' coverage: 2431
+  New 'line' coverage: 742
+  New 'line' coverage: 747
+  New 'line' coverage: 748
+  New 'line' coverage: 750
+  New 'line' coverage: 751
+  New 'line' coverage: 753
+  New 'line' coverage: 754
+  New 'line' coverage: 755
+  New 'line' coverage: 757
+  New 'line' coverage: 758
+  New 'line' coverage: 759
+  New 'line' coverage: 760
+  New 'line' coverage: 762
+  New 'line' coverage: 892
+  New 'line' coverage: 893
+  New 'line' coverage: 894
+  New 'line' coverage: 896

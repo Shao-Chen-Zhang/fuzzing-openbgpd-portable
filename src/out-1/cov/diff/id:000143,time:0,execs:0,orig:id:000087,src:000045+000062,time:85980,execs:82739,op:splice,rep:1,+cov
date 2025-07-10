@@ -1,0 +1,15 @@
+diff id:000142,time:0,execs:0,orig:id:000088,src:000024+000064,time:91843,execs:88451,op:splice,rep:8 -> id:000143,time:0,execs:0,orig:id:000087,src:000045+000062,time:85980,execs:82739,op:splice,rep:1,+cov
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
+  New 'line' coverage: 1114
+  New 'line' coverage: 1115
+  New 'line' coverage: 1117
+  New 'line' coverage: 1122
+  New 'line' coverage: 1123
+  New 'line' coverage: 1125
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/kroute-freebsd.c
+  New 'function' coverage: kr_nexthop_delete()
+  New 'line' coverage: 725
+  New 'line' coverage: 730
+  New 'line' coverage: 735
+  New 'line' coverage: 736
+  New 'line' coverage: 739

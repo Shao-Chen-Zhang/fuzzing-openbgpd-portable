@@ -1,0 +1,20 @@
+diff id:000020,time:0,execs:0,orig:id:000235,src:000225,time:2614583,execs:1909452,op:havoc,rep:5,+cov -> id:000021,time:0,execs:0,orig:id:000234,src:000225,time:2605580,execs:1903181,op:havoc,rep:6,+cov
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/util.c
+  New 'function' coverage: log_esi()
+  New 'function' coverage: log_mac()
+  New 'line' coverage: 100
+  New 'line' coverage: 101
+  New 'line' coverage: 107
+  New 'line' coverage: 1226
+  New 'line' coverage: 1227
+  New 'line' coverage: 59
+  New 'line' coverage: 63
+  New 'line' coverage: 64
+  New 'line' coverage: 66
+  New 'line' coverage: 72
+  New 'line' coverage: 76
+  New 'line' coverage: 77
+  New 'line' coverage: 85
+  New 'line' coverage: 97
+  New 'line' coverage: 98
+  New 'line' coverage: 99

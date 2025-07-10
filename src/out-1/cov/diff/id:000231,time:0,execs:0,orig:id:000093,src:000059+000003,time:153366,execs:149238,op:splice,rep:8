@@ -1,0 +1,3 @@
+diff id:000230,time:0,execs:0,orig:IMSG_CTL_RELOAD.bin -> id:000231,time:0,execs:0,orig:id:000093,src:000059+000003,time:153366,execs:149238,op:splice,rep:8
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
+  New 'line' coverage: 1247

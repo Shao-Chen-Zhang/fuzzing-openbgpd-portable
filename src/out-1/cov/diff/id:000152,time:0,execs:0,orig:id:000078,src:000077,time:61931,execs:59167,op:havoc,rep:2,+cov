@@ -1,0 +1,10 @@
+diff id:000151,time:0,execs:0,orig:id:000079,src:000077,time:61968,execs:59203,op:havoc,rep:2,+cov -> id:000152,time:0,execs:0,orig:id:000078,src:000077,time:61931,execs:59167,op:havoc,rep:2,+cov
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
+  New 'line' coverage: 1127
+  New 'line' coverage: 1128
+  New 'line' coverage: 1130
+  New 'line' coverage: 1133
+Src file: /home/share/openbgpd-portable/src/cov-bgpd/pftable.c
+  New 'function' coverage: pftable_addr_add()
+  New 'line' coverage: 232
+  New 'line' coverage: 234

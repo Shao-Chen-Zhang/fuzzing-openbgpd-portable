@@ -1,7 +1,0 @@
-# environment variables:
-AFL_CUSTOM_INFO_PROGRAM=./bgpd
-AFL_CUSTOM_INFO_PROGRAM_ARGV=-d
-AFL_CUSTOM_INFO_OUT=out/default
-AFL_USE_ASAN=1
-# command line:
-'afl-fuzz' '-i' 'seeds/' '-o' 'out' '--' './bgpd' '-d'

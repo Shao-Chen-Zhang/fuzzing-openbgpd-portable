@@ -1,3 +1,0 @@
-diff id:000146,time:0,execs:0,orig:id:000084,src:000050,time:70849,execs:67868,op:havoc,rep:3,+cov -> id:000147,time:0,execs:0,orig:id:000083,src:000065+000071,time:70112,execs:67137,op:splice,rep:5
-Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
-  New 'line' coverage: 1206

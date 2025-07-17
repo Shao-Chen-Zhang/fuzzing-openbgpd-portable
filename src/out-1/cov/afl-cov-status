@@ -1,3 +1,0 @@
-afl_cov_pid     : 18332
-afl_cov_version : 0.7.0
-command_line    : /usr/local/bin/afl-cov -d out/ --coverage-cmd cov-bgpd/bgpd -d < AFL_FILE --code-dir cov-bgpd/

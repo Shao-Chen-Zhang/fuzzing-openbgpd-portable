@@ -1,3 +1,0 @@
-diff id:000055,time:0,execs:0,orig:id:000200,src:000198,time:2246518,execs:1653105,op:havoc,rep:4 -> id:000056,time:0,execs:0,orig:id:000199,src:000197,time:2245639,execs:1652497,op:havoc,rep:3
-Src file: /home/share/openbgpd-portable/src/cov-bgpd/kroute-freebsd.c
-  New 'line' coverage: 811

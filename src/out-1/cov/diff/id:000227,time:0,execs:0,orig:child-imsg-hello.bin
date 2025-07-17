@@ -1,3 +1,0 @@
-diff id:000226,time:0,execs:0,orig:random.bin -> id:000227,time:0,execs:0,orig:child-imsg-hello.bin
-Src file: /home/share/openbgpd-portable/src/cov-bgpd/bgpd.c
-  New 'line' coverage: 155
